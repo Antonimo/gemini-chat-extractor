@@ -1,0 +1,42 @@
+{
+  "name": "gemini-chat-extractor",
+  "version": "2.0.0",
+  "description": "A reusable Node.js utility to extract and clean Gemini chat conversations from HTML/MHTML files",
+  "main": "gemini-chat-extractor.js",
+  "bin": {
+    "gemini-extract": "./gemini-chat-extractor.js"
+  },
+  "scripts": {
+    "extract": "node gemini-chat-extractor.js",
+    "extract:markdown": "node gemini-chat-extractor.js --format markdown",
+    "extract:verbose": "node gemini-chat-extractor.js --verbose",
+    "help": "node gemini-chat-extractor.js --help",
+    "test": "node -e \"const GeminiChatExtractor = require('./gemini-chat-extractor.js'); console.log('✅ Module loaded successfully');\""
+  },
+  "keywords": [
+    "gemini",
+    "chat",
+    "extract",
+    "mhtml",
+    "html",
+    "conversation",
+    "utility",
+    "cli"
+  ],
+  "author": "Antonimo",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "jsdom": "^26.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Antonimo/gemini-chat-extractor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Antonimo/gemini-chat-extractor/issues"
+  },
+  "homepage": "https://github.com/Antonimo/gemini-chat-extractor#readme"
+}
