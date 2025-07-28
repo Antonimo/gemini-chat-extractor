@@ -132,7 +132,7 @@ class GeminiChatExtractor {
     addMarkers(userElements) {
         userElements.forEach((element, index) => {
             const messageNumber = parseInt(element.id.replace('user-query-content-', ''));
-            const marker = document.createElement('div');
+            const marker = element.ownerDocument.createElement('div');
             marker.textContent = `=== USER_MESSAGE_${messageNumber} ===`;
             marker.style.display = 'none';
             element.insertBefore(marker, element.firstChild);
